@@ -5,7 +5,7 @@ _To build a serverless, progressive web application (PWA) with React using a
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events._
 
-[Meet App hosted on Github Pages]()
+[Meet App hosted on Github Pages](https://mattsperez.github.io/meet/)
 
 ### **Feature User Stores:**
 
