@@ -1,8 +1,8 @@
-import CitySearch from '../components/CitySearch';
-import App from '../App';
 import { render, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { getEvents, extractLocations } from '../api';
+import CitySearch from '../components/CitySearch';
+import App from '../App';
+import { extractLocations, getEvents } from '../api';
 
 describe('<CitySearch /> component', () => {
     let CitySearchComponent;
@@ -82,7 +82,7 @@ describe('<CitySearch /> component', () => {
     });
 });
 
-describe('<CitiSearch /> integration', () => {
+describe('<CitySearch /> integration', () => {
     test('renders suggestions list when the app is rendered.', async () => {
         const AppComponent = render(<App />);
         const AppDOM = AppComponent.container.firstChild;

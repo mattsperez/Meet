@@ -1,9 +1,10 @@
+import CitySearch from './components/CitySearch'; 
 import EventList from './components/EventList';
-import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
-import './App.css';
 import { useState, useEffect } from 'react';
 import { extractLocations, getEvents } from './api';
+
+import './App.css';
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -36,17 +37,17 @@ const App = () => {
 
   return (
     <div className="App">
-    
+
       <NumberOfEvents
         setCurrentNOE={setCurrentNOE}
         setErrorAlert={setErrorAlert}
-      ></NumberOfEvents>
+      />
       <CitySearch
         allLocations={allLocations}
         setCurrentCity={setCurrentCity}
         setInfoAlert={setInfoAlert}
-      ></CitySearch>
-      <EventList events={events}></EventList>
+      />
+      <EventList events={events} />
     </div>
   );
 };
