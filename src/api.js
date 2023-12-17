@@ -38,14 +38,15 @@ export const getEvents = async () => {
 
     if (token) {
         removeQuery();
-        const url = "https://i9ldee2bvj.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" + "/" + token;
+        const url = 'https://i9ldee2bvj.execute-api.eu-central-1.amazonaws.com/dev/api/get-events' + '/' + token;
+
         const response = await fetch(url);
         const result = await response.json();
         if (result) {
             return result.events;
         } else return null;
     }
-    
+
 };
 
 const removeQuery = () => {
@@ -77,7 +78,7 @@ export const getAccessToken = async () => {
         const code = await searchParams.get("code");
         if (!code) {
             const response = await fetch(
-                "https://i9ldee2bvj.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
+                'https://i9ldee2bvj.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url'
             );
             const result = await response.json();
             const { authUrl } = result;
