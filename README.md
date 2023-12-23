@@ -7,6 +7,10 @@ Calendar API to fetch upcoming events._
 
 [Meet App hosted on Github Pages](https://mattsperez.github.io/meet/)
 
+### **Screenshot:**
+<img width="1289" alt="Screenshot 2023-12-23 at 11 14 07 AM" src="https://github.com/mattsperez/meet/assets/131983739/ccb4f7be-4b6d-496f-8f71-e839fc51a123">
+
+
 ### **Feature User Stores:**
 
 **Feature 2:** _Show/Hide Event Details_
