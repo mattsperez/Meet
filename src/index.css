@@ -1,12 +1,10 @@
 body {
 	margin: 0;
 	font-family: 'Mooli', sans-serif;
-	font-family: 'Sulphur Point', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
 	font-family: 'Mooli', sans-serif;
-	font-family: 'Sulphur Point', sans-serif;
 }
